@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:checkable="false"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_rate_us"
+        android:checkable="false"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:title="Rate Us" />
+
+    
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/sharee"
+        android:title="Share App" />
+
+
+    <item
+        android:id="@+id/privacypolicy"
+        android:icon="@drawable/padlock"
+        android:title="Privacy Policy" />
+
+
+    <item
+        android:id="@+id/nav_text"
+        android:title="RELEASE 1.0" />
+
+
+</menu>

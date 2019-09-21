@@ -1,0 +1,73 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.tigervpn.free.unblock.fast.vpn.activity"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            useProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+        }
+
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:gridlayout-v7:27.1.1'
+    implementation 'com.daimajia.numberprogressbar:library:1.2@aar'
+    implementation 'com.amitshekhar.android:android-networking:0.2.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.caverock:androidsvg:1.2.2-beta-1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-ads:17.1.2'
+    implementation files('libs/achartengine-1.2.0.jar')
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.github.jakob-grabner:Circle-Progress-View:1.2.8'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+    implementation 'com.treebo:internetavailabilitychecker:1.0.2'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+
+
+}
+
+
+apply plugin: 'com.google.gms.google-services'
